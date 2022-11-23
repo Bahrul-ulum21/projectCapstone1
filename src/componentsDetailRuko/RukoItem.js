@@ -5,7 +5,7 @@ import RukoItemImage from './RukoItemImage';
 function RukoItem({ imageUrl, alamat, pemilik, ukuran, harga }) {
  return (
    <div className="contact-item">
-     <RukoItemImage mageUrl={imageUrl} />
+     <RukoItemImage imageUrl={imageUrl} />
      <RukoItemBody alamat={alamat} pemilik={pemilik} ukuran={ukuran} harga={harga} />
    </div>
  );
