@@ -1,16 +1,19 @@
-import React from 'react';
-import RukoList from './RukoList';
-import {getData} from '../utils/dataRuko'
+import React from "react";
+import RukoList from "./RukoList";
+import { getDataRuko } from "../utils/dataRuko";
+// import HomePage from '../pages/HomePage';
+import { Route } from "react-router-dom";
 
 function RukoApp() {
-    const rukoku = getData();
+  const rukoku = getDataRuko();
 
-    return (
-        <div className="ruko-app">
-            <h1>Daftar Ruko</h1>
-            <RukoList rukoku={rukoku}/>
-        </div>
-    )
+  return (
+    <div className="ruko-app">
+      <h1>Daftar Ruko</h1>
+      <RukoList rukoku={rukoku} />
+      <main>{/* <Route path='/' element={<HomePage/>}/> */}</main>
+    </div>
+  );
 }
 
 export default RukoApp;

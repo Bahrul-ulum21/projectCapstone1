@@ -1,15 +1,20 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
+import React from "react";
+import { createRoot } from "react-dom/client";
 import ContactApp from './components/ContactApp';
-import RukoApp from './componentsDetailRuko/RukoApp';
+import RukoApp from "./componentsDetailRuko/RukoApp";
+import { BrowserRouter } from "react-router-dom";
 
 // styling
-import './styles/style.css';
+import "./styles/style.css";
 
-const root = createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById("root"));
 // root.render(<ContactApp />);
 // root.render(<RukoApp />);
-root.render(<>
-<ContactApp/>
-<RukoApp></RukoApp>
-</>)
+root.render(
+  <>
+    <ContactApp/>
+    <BrowserRouter>
+      <RukoApp />
+    </BrowserRouter>
+  </>
+);
