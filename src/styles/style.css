@@ -6,7 +6,8 @@
 
 .search-bar {
   display: block;
-  width: 100%;
+  border-radius: 15px;
+  width: 30%;
   padding: 8px;
   margin: 8px 0;
   font-family: "Inter", sans-serif;
@@ -27,14 +28,13 @@
   position: relative;
 }
 
-
 .ruko-list {
   margin: 2px 0;
   padding: 16px;
-  background-color: antiquewhite;
+  background-color: #fff;
 }
+
 .item__body {
-  background-color: aliceblue;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -58,7 +58,7 @@ img {
 /* /////////////////// */
 body {
   font-family: "Inter", sans-serif;
-  background-color: #aaa;
+  background-color: #fff;
 }
 
 img {
@@ -77,11 +77,13 @@ img {
   margin-bottom: 32px;
 }
 
+.contact-list {
+  border: 1px dashed black;
+}
 .contact-item {
   display: flex;
   align-items: center;
   margin: 24px 0;
-  border: 1px dashed black;
   padding: 16px;
   border-radius: 8px;
 }
@@ -92,10 +94,13 @@ img {
 }
 
 .contact-item__body {
-  margin-left: 8px;
-  padding-left: 8px;
-  border-left: 1px solid #aaa;
+  margin-left: 10px;
+  padding-left: 10px;
   flex: 1;
+  border-radius: 12px;
+  box-shadow: 1px 3px rgb(29, 51, 34);
+  background-color: #00AD7C;
+  color: #fff;
 }
 
 .contact-item__title {
@@ -117,7 +122,7 @@ img {
 }
 
 .contact-input {
-  border: 1px dashed black;
+  border-radius: 1px black;
   padding: 16px;
   margin: 14px 0;
   border-radius: 8px;
@@ -136,10 +141,13 @@ img {
   width: 100%;
   padding: 8px;
   font-family: "Inter", sans-serif;
+  border: 0;
+  background-color: #00AD7C;
+  color: #fff;
 }
 
 .menumob {
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   color: white !important;
   width: 100%;
   display: flex;
@@ -155,7 +163,7 @@ img {
 }
 
 .navmob {
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   width: 100%;
   display: flex;
   font-weight: 600;
@@ -186,7 +194,7 @@ img {
   text-decoration: none;
 }
 .nav {
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   width: 100%;
   display: flex;
   font-weight: 600;
@@ -228,11 +236,11 @@ img {
   margin: 18px 40px 18px 80px;
   padding: 18px;
   font-size: 18px;
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   color: white;
 }
 footer {
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   color: white;
   font-size: 14px;
   padding: 2em;

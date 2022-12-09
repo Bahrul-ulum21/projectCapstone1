@@ -6,7 +6,7 @@ let DataRuko = [
     alamat: "ALAMAT :Jakarta Selatan, Jl. Barito II No.56, Kebayoran Baru",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp25.000.000 / thn",
-    pemilik: "PEMILIK : bahrululum",
+    pemilik: "PEMILIK : Suryadi",
 
   
   },
@@ -17,7 +17,7 @@ let DataRuko = [
     alamat: "ALAMAT : Surabaya Jl. Joglo Raya No 15, Joglo",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp34,000,000 / thn",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Rosa Rahmadi", 
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ let DataRuko = [
     alamat: "ALAMAT : Muara Karang, Muara Karang, Jakarta Utara, DKI Jakarta",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp35.000.000 / thn",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Vina Risma", 
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ let DataRuko = [
     alamat: "ALAMAT : Ruko Serpong Damai, Serpong, Tangerang, Banten",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp34.000.000 / thn",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Bahrul", 
   },
   {
     id: 5,
@@ -44,7 +44,7 @@ let DataRuko = [
     alamat: "ALAMAT : Sumenep, Madura, Jawatimur",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp20.000.000 / thn",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Iwan Setiawan", 
   },
   {
     id: 6,
@@ -53,7 +53,7 @@ let DataRuko = [
     alamat: "ALAMAT : malang",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp1.000.000/ bulan",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Wanto", 
   },
   {
     id: 7,
@@ -62,7 +62,7 @@ let DataRuko = [
     alamat: "ALAMAT : Sumenep",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : 35.000.000/ thn",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Citra Rasya", 
   },
   {
     id: 8,
@@ -71,7 +71,7 @@ let DataRuko = [
     alamat: "ALAMAT : Banten Tanggerang",
     ukuran: "UKURAN : 7 X 5",
     harga: "HARGA : Rp120 jt/ bulan",
-    pemilik: "PEMILIK : bahrululum", 
+    pemilik: "PEMILIK : Aminah", 
   },
 
 ]
