@@ -2,14 +2,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: black;
 }
 
 .search-bar {
   display: block;
-  width: 100%;
+  border-radius: 15px;
+  width: 30%;
   padding: 8px;
   margin: 8px 0;
   font-family: "Inter", sans-serif;
+  margin: 12px;
 }
 
 .item__image {
@@ -18,23 +21,20 @@
 
 .temola {
   box-shadow: 0 3px 6px 0 rgb(0 0 0);
-  width: 50%;
+  width: 100%;
   margin: 12px;
   background-color: whitesmoke;
   border-radius: 5px;
-  /* text-align: center; */
   overflow: hidden;
   position: relative;
 }
 
-
 .ruko-list {
-  margin: 2px 0;
-  padding: 16px;
-  background-color: antiquewhite;
+  display: grid;
+  grid-row-gap: 16px;
 }
+
 .item__body {
-  background-color: aliceblue;
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -58,7 +58,7 @@ img {
 /* /////////////////// */
 body {
   font-family: "Inter", sans-serif;
-  background-color: #aaa;
+  background-color: #fff;
 }
 
 img {
@@ -71,17 +71,24 @@ img {
   padding: 16px;
 }
 
+.contact-app h3 {
+  padding-top: 5rem;
+  padding-bottom: 15px;
+}
+
 .contact-app h1 {
   font-weight: normal;
   font-size: 48px;
   margin-bottom: 32px;
 }
 
+.contact-list {
+  border: 1px dashed black;
+}
 .contact-item {
   display: flex;
   align-items: center;
   margin: 24px 0;
-  border: 1px dashed black;
   padding: 16px;
   border-radius: 8px;
 }
@@ -92,10 +99,13 @@ img {
 }
 
 .contact-item__body {
-  margin-left: 8px;
-  padding-left: 8px;
-  border-left: 1px solid #aaa;
+  margin-left: 10px;
+  padding-left: 10px;
   flex: 1;
+  border-radius: 12px;
+  box-shadow: 1px 3px rgb(29, 51, 34);
+  background-color: #00AD7C;
+  color: #fff;
 }
 
 .contact-item__title {
@@ -117,7 +127,7 @@ img {
 }
 
 .contact-input {
-  border: 1px dashed black;
+  border-radius: 1px black;
   padding: 16px;
   margin: 14px 0;
   border-radius: 8px;
@@ -136,109 +146,82 @@ img {
   width: 100%;
   padding: 8px;
   font-family: "Inter", sans-serif;
+  border: 0;
+  background-color: #00AD7C;
+  color: #fff;
 }
 
-.menumob {
-  background-color: #2b7a0b;
-  color: white !important;
-  width: 100%;
-  display: flex;
-  font-weight: 600;
-  font-size: 20px;
-  padding: 10px;
-  justify-content: space-between;
-}
-
-.menumob a {
-  min-width: 44px;
-  min-height: 44px;
-}
-
-.navmob {
-  background-color: #2b7a0b;
-  width: 100%;
-  display: flex;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.navlistmob {
-  width: 60%;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-.navitemsmob {
-  box-sizing: border-box;
-  display: inline-block;
-  text-align: right;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: white !important;
-}
-.iconmenu a {
-  text-decoration: none;
-  color: white !important;
-}
-.navmob a {
-  display: inline-block;
-  padding: 1.3em;
-  text-decoration: none;
-}
 .nav {
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   width: 100%;
   display: flex;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .navlist {
-  width: 80%;
+  width: 100%;
   padding: 0;
   margin: 0;
-  text-align: left;
+  text-align: right;
 }
 
 .navitems {
   box-sizing: border-box;
   display: inline-block;
-  text-align: right;
   line-height: 24px;
   text-transform: uppercase;
-}
-.nav a {
-  display: inline-block;
   padding: 1.3em;
   text-decoration: none;
-  color: black !important;
+  color: white !important;
 }
-.nav a:hover {
-  text-decoration: none;
+
+.nav-container-logo {
+  padding: 1.3em;
 }
+
 .content {
   padding: 18px;
-  text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   width: 100%;
+  padding-top: 3em;
+}
+
+.content h1 {
+  text-align: center;
 }
 
 .content p {
-  text-align: center;
+  text-align: justify;
   margin: 18px 40px 18px 80px;
   padding: 18px;
   font-size: 18px;
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   color: white;
+   word-spacing: 7px;
+   line-height: 30px;
 }
+
 footer {
-  background-color: #2b7a0b;
+  background-color: #00AD7C;
   color: white;
   font-size: 14px;
   padding: 2em;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
+
+.ruko-app h1 {
+  padding-top: 5rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
 .ruko-item {
     display: flex;
     align-items: center;
@@ -249,65 +232,191 @@ footer {
   
 }
 
-@media screen and (min-width: 500px) {
-  .menumob {
-    display: none;
-  }
-  .navmob {
-    display: none;
-  }
+/* faq */
+
+.faq {
+  width: 100%;
+  padding-top: 65px;
+  padding-bottom: 80px;
 }
-@media screen and (max-width: 499px) {
-  .nav {
-    display: none;
+
+  .faq__title {
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 20px;
   }
-  .navmob {
-    z-index: 10;
-    background-color: #fff;
+
+  .faq__question {
+    max-width: 350px;
     width: 100%;
-    position: absolute;
-    -webkit-transform: translate(-100%, 0);
-    transform: translate(-100%, 0);
-    transition: transform 0.3s ease;
+    border-bottom: 1px solid blue;
   }
-  .open {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-  }
-  .navitemsmob {
-    display: list-item;
-    color: black !important;
+
+  .faq__question-button {
     width: 100%;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
+
+
+  .faq__desc {
+    padding-right: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    font-size: 13px;
+    text-align: justify;
+  }
+
+  .illustration {
+    width: 100%;
+    position: relative;
+  }
+  
+  .illustration__box {
+      position: absolute;
+      z-index: 999;
+      top: 200px;
+      left: -95px;
+    }
+  
+    .illustration__woman-desktop {
+      position: absolute;
+      top: 60px;
+      left: -77px;
+      clip-path: inset(0px 0px 0px 77px);
+    }
+  
+    .illustration__woman-mobile {
+      display: none;
+    }
+  
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: blue;
+      padding-top: 10px;
+    }
+    .attribution a {
+      color: violet;
+    }
+    
+  .faq__desc.show-description {
+  height: 6rem;
+  margin-bottom: 15px;
 }
-@media screen and (min-width: 650px) {
-  .list_item_content {
-    padding: 16px 32px 32px 32px;
-  }
-  .list_item_title {
-    font-size: 18px;
-  }
-  .list_item_desc {
-    font-size: 14px;
-  }
+
+/* Arrows */
+
+/* closed */
+.faq__question-button::after {
+  transition: transform 300ms ease-out;
 }
+
+/* open */
+.font-weight-bold::after {
+  transform: rotate(720deg);
+}
+
+.component {
+  margin: 0 auto;
+  max-width: 920px;
+  width: 100%;
+  background-color: #ffffff;
+  background-position: -565px -295px;
+  background-repeat: no-repeat;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  display: flex;
+}
+
 @media screen and (min-width: 700px) {
-  .list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 16px;
+  .ruko-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 16px;
   }
 }
+
 @media screen and (min-width: 900px) {
-  .list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .ruko-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 @media screen and (min-width: 1200px) {
   main {
     max-width: 1200px;
   }
 }
+
+@media only screen and (max-width: 800px) {
+  .illustration__woman-desktop {
+    max-width: 120%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    /* added padding here to mobile container,
+    so illustration__woman-desctop would not be cropped at the top */
+    padding-top: 105px;
+  }
+
+  .component {
+    max-width: 327px;
+
+    background-position: top;
+    flex-direction: column;
+  }
+
+    .illustration__box {
+      display: none;
+    }
+
+    .illustration__woman-desktop {
+      display: none;
+    }
+
+    .illustration__woman-mobile {
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      top: -105px;
+      left: 12px;
+    }
+
+  .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 132px;
+    padding-bottom: 48px;
+  }
+
+    .faq__question {
+      max-width: 279px;
+    }
+
+    .faq__question-button {
+      width: 279px;
+      font-size: 13px;
+      line-height: 13px;
+    }
+
+      .faq::after {
+        padding-right: 0px;
+      }
+    }
