@@ -9,13 +9,15 @@ function RukoList({ rukoku }) {
     elm?.alamat?.toLowerCase()?.includes(text)
   );
   return (
-    <div className="ruko-list">
-      <input className="search-bar" placeholder="Cari berdasarkan nama" onChange={(event) => setText(event.target.value)} />
-      {filteredRuko.map((ruko) => (
+    <div className="serach-bar">
+      <input className="search-bar" placeholder="Search.." onChange={(event) => setText(event.target.value)} />
+      <div className="ruko-list">
+        {filteredRuko.map((ruko) => (
         <RukoItem key={ruko.id} {...ruko} />
       ))}
-    </div>
-  );
+      </div>
+  </div>
+);
 }
 
 export default RukoList;

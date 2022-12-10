@@ -10,13 +10,7 @@ class ContactApp extends React.Component {
       contacts: getData(),
     };
 
-    this.onDeleteHandler = this.onDeleteHandler.bind(this);
     this.onAddContactHandler = this.onAddContactHandler.bind(this);
-  }
-
-  onDeleteHandler(id) {
-    const contacts = this.state.contacts.filter((contact) => contact.id !== id);
-    this.setState({ contacts });
   }
 
   onAddContactHandler({ name, tag }) {
@@ -39,12 +33,11 @@ class ContactApp extends React.Component {
   render() {
     return (
       <div className="contact-app">
-        <h2>Tambahkan Komentar</h2>
-        <ContactInput addContact={this.onAddContactHandler} />
+        <h3>Review Customer</h3>
         <ContactList
           contacts={this.state.contacts}
-          onDelete={this.onDeleteHandler}
         />
+        <ContactInput addContact={this.onAddContactHandler} />
       </div>
     );
   }
