@@ -1,23 +1,30 @@
-// import React from 'react';
-// // import PropTypes from 'prop-types';
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import Navigation from '../components/Navigation';
+import RukoItem from './RukoItem';
+import RukoItemImage from './RukoItemImage';
+// import { getDataRuko } from '../utils/dataRuko';
+// import PropTypes from 'prop-types';
 
-// function RukoDetail({ imageUrl, title, alamat, provinsi, pemilik, ukuran, harga }) {
-//   return (
-//     <div className="temola"  >
-//       <RukoItemImage imageUrl={imageUrl} />
-//       <article>
-//       <h3>
-//         {title}
-//       </h3>
-//       <p>{alamat}</p>
-//       <p>{provinsi}</p>
-//       <p>{pemilik}</p>
-//       <p>{ukuran}</p>
-//       <p>{harga}</p>
+function RukoDetail({title,imageUrl,alamat,provinsi,pemilik,ukuran,harga}) {
+  return (
+    <>
+    <Navigation/>
+    <div className="temola"  >
+      <RukoItemImage imageUrl={imageUrl} />
+      <article>
+      <h3>
+        {title}
+      </h3>
+      </article>
+       <p>{alamat}</p>
+       <p>{provinsi}</p>
+       <p>{pemilik}</p>
+       <p>{ukuran}</p>
+       <p>{harga}</p>
+      </div>
+    </>
+  );
+}
 
-//       </article>
-//       </div>
-//   );
-// }
-
-// export default RukoDetail;
+export default RukoDetail;
