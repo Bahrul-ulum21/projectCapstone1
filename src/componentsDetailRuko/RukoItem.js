@@ -1,19 +1,26 @@
 import React from "react";
-import RukoItemBody from "./RukoItemBody";
+import { Link } from 'react-router-dom';
 import RukoItemImage from "./RukoItemImage";
 
-function RukoItem({ imageUrl, title, alamat, provinsi, pemilik, ukuran, harga }) {
+function RukoItem({ imageUrl, title,alamat,provinsi,pemilik,ukuran,harga }) {
   return (
-    <div className="temola">
+    <div className="temola"  >
       <RukoItemImage imageUrl={imageUrl} />
-      <RukoItemBody
-        title={title}
-        alamat={alamat}
-        provinsi={provinsi}
-        pemilik={pemilik}
-        ukuran={ukuran}
-        harga={harga}
-      />
+      {/* <article>
+      <h3>
+        <Link to={`/dataRuko/${id}`}>{title}</Link>
+      </h3>
+      </article> */}
+      <h3>{title}</h3>
+       <p>{alamat}</p>
+       <p>{provinsi}</p>
+       <p>{pemilik}</p>
+       <p>{ukuran}</p>
+       <p>{harga}</p>
+      
+
+      
+       
     </div>
   );
 }

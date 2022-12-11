@@ -2,7 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: black;
+  /* color: white; */
+  /* background-image: url(../images/); */
 }
 
 .search-bar {
@@ -17,6 +18,11 @@
 
 .item__image {
   width: 42rem;
+  max-height: 500px;
+}
+
+.data {
+    color: whitesmoke;
 }
 
 .temola {
@@ -27,6 +33,7 @@
   border-radius: 5px;
   overflow: hidden;
   position: relative;
+  
 }
 
 .ruko-list {
@@ -37,15 +44,40 @@
 .item__body {
   margin-top: 10px;
   margin-bottom: 20px;
+  color: #181D31;
 }
+
+.temola {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+
 .item__body h3 {
   margin: 2ch;
   margin-top: 15px;
   margin-bottom: 5px;
   border-bottom: 2px solid #cde1ef;
+  color: #181D31;
 }
+
+.temola h3 {
+  margin: 1ch;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: 2px solid #cde1ef;
+  color: #181D31;
+}
+
 .item__body  p {
   margin: 3ch;
+  margin-bottom:1ch;
+  line-height:4px;
+}
+
+.temola  p {
+  margin: 2ch;
   margin-bottom:1ch;
   line-height:4px;
 }
@@ -103,10 +135,22 @@ img {
   padding-left: 10px;
   flex: 1;
   border-radius: 12px;
-  box-shadow: 1px 3px rgb(29, 51, 34);
-  background-color: #00AD7C;
+  box-shadow: 1px 3px whitesmoke;
+  background-color: #181D31;
   color: #fff;
 }
+
+.temola {
+  /* margin-left: 5px;
+  padding-left: 5px; */
+  flex: 1;
+  border-radius: 12px;
+  /* box-shadow: 1px 3px whitesmoke; */
+  background-color:whitesmoke;
+  color: #181D31;
+}
+
+
 
 .contact-item__title {
   padding: 4px 0;
@@ -119,7 +163,7 @@ img {
 .contact-item__delete {
   padding: 8px;
   font-size: 18px;
-  background-color: orangered;
+  background-color: #181D31;
   color: white;
   border: 0;
   border-radius: 4px;
@@ -147,12 +191,12 @@ img {
   padding: 8px;
   font-family: "Inter", sans-serif;
   border: 0;
-  background-color: #00AD7C;
+  background-color: #181D31;
   color: #fff;
 }
 
 .nav {
-  background-color: #00AD7C;
+  background-color: #181D31;
   width: 100%;
   display: flex;
   font-weight: 600;
@@ -180,6 +224,18 @@ img {
   color: white !important;
 }
 
+.fluid {
+  align-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.logo {
+  color: white;
+}
+
+.nav-NavLinks {
+  color: white;
+}
 .nav-container-logo {
   padding: 1.3em;
 }
@@ -200,14 +256,16 @@ img {
   margin: 18px 40px 18px 80px;
   padding: 18px;
   font-size: 18px;
-  background-color: #00AD7C;
-  color: white;
+  background-color: whitesmoke;
+  color: #181D31;
    word-spacing: 7px;
    line-height: 30px;
+   border-radius: 5px;
+   box-shadow: 4px 2px 2px 4px #181D31;
 }
 
 footer {
-  background-color: #00AD7C;
+  background-color: #181D31;
   color: white;
   font-size: 14px;
   padding: 2em;
