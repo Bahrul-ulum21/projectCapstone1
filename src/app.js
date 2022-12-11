@@ -5,7 +5,7 @@ import HomePage from './pages/homePage';
 import ReviewPage from './pages/reviewPage';
 import ContactPage from './pages/contactPage';
 import FaqPage from './pages/faqPage';
-// import DetailPage from './pages/detailPage';
+import DetailPageWrapper from './pages/detailPage';
 
 function App() {
 	return (
@@ -18,7 +18,7 @@ function App() {
 					<Route path='/review' element={<ReviewPage />} />
 					<Route path='/faq' element={<FaqPage />} />
 					<Route path='/contact' element={<ContactPage />} />
-					{/* <Route path="/dataRuko/:id" element={<DetailPage />} /> */}
+					<Route path="/dataRuko/:id" element={<DetailPageWrapper />} />
 				</Routes>
 			</main>
 		</>

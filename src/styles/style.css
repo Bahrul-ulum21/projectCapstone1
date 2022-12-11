@@ -272,6 +272,7 @@ footer {
   width: 100%;
   text-align: center;
   font-weight: bold;
+  /* position: fixed; */
 }
 
 .ruko-app h1 {
